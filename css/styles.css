@@ -1,0 +1,40 @@
+:root{
+    --text-color: rgb(255, 255, 255);
+}
+html{
+    background-image: linear-gradient(rgba(53, 92, 125, 0.8), 
+    rgba(108, 91, 123, 0.7), 
+    rgba(192, 108, 132, 0.7)),
+    url("../imgs/dev.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    letter-spacing: 8px;
+    font-weight: 300;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: var(--text-color);
+    letter-spacing: 5px;
+    font-style: italic;
+}
+#mainForm{
+    margin: 0 Auto;
+    width: 500px;
+    height: 1000px;
+    background-color: rgba(20, 35, 53, 0.95);
+    z-index: 2;
+    margin-bottom: 2em;
+    border-radius: 8px;
+}
+/* https://wallpaperaccess.com/full/827467.jpg */
