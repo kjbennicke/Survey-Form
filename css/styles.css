@@ -36,5 +36,6 @@ h1{
     z-index: 2;
     margin-bottom: 2em;
     border-radius: 8px;
+    box-shadow: 1px 1px 2px black;
 }
 /* https://wallpaperaccess.com/full/827467.jpg */
