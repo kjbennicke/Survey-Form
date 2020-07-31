@@ -2,6 +2,7 @@
     --text-color: rgb(255, 255, 255);
 }
 html{
+    color: var(--text-color);
     background-image: linear-gradient(rgba(53, 92, 125, 0.8), 
     rgba(108, 91, 123, 0.7), 
     rgba(192, 108, 132, 0.7)),
@@ -20,6 +21,28 @@ h1{
     letter-spacing: 8px;
     font-weight: 300;
 }
+button{
+    padding: 1em 6em;
+    color: var(--text-color);
+    background-color: rgb(65, 199, 65);
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+button:hover{
+    background-color: rgb(14, 160, 14);    
+}
+button:active{
+    background-color: rgb(94, 172, 94);    
+
+}
+input{
+    display: flex;
+    justify-content: center;
+    margin: 1em 1em;
+}
+
 #heading{
     display: flex;
     justify-content: center;
@@ -29,6 +52,7 @@ h1{
     font-style: italic;
 }
 #mainForm{
+    display: flex;
     margin: 0 Auto;
     width: 500px;
     height: 1000px;
@@ -37,5 +61,6 @@ h1{
     margin-bottom: 2em;
     border-radius: 8px;
     box-shadow: 1px 1px 2px black;
+    justify-content: center;
 }
 /* https://wallpaperaccess.com/full/827467.jpg */
