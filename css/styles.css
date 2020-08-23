@@ -16,6 +16,7 @@ html{
 }
 .header{
     text-align: center;
+    font-size: 18px;;
 }
 h1{
     display: flex;
@@ -23,6 +24,12 @@ h1{
     color: var(--text-color);
     letter-spacing: 8px;
     font-weight: 300;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin: 0.1em 0;
 }
 button{
     padding: 0.5em 3.5em;
@@ -49,9 +56,9 @@ button:active{
     background-color: rgb(94, 172, 94);    
 
 }
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea{
     display: flex;
-    margin: 1em 2em;
+    margin: 0.5em 2em;
     border: none;
     border-radius: 16px;
     padding: 0.5em 1em;
@@ -60,14 +67,21 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     color: rgb(90, 88, 88);
     width: 80%;
 }
-input:focus{
+input:focus, textarea:focus{
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     outline: none;
 }
-.radio{
+fieldset{
+    margin: 1em 2em;
+}
+.align{
     margin: 0.25em 2em;
 
+}
+.space{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 #heading{
     display: flex;
@@ -76,6 +90,10 @@ input:focus{
     color: var(--text-color);
     letter-spacing: 5px;
     font-style: italic;
+}
+#name-label, #email-label, #number-label, #age-label{
+    margin: 0 2em;
+    font-size: 14px;
 }
 #mainForm{
     display: flex;

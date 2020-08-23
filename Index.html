@@ -6,32 +6,74 @@
     <title>Document</title>
     <link type="text/css" href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
     <div>
-        <h1 id="title">What Brings you to us?</h1>
+        <h1 id="title">Where games come to happen?</h1>
+        <h2><i class="fas fa-dice-d20"></i></h2>
         <p id="description" class="header">We would love to hear some of your thoughts.</p>
         <div id="mainForm">
             <form id="survey-form">
                 <p class="header">Who are you?</p>
-                <input id="name" type="text" placeholder=" Name" required>
-                <input id="email" type="email" placeholder="email" required>
+                <label id="name-label">Full Name:</label>
+                <input id="name" type="text" placeholder="Enter your name..." required>
+                <label id="email-label">Email:</label>
+                <input id="email" placeholder="where to send you stuff!" type="email" required>
                 <p class="header">A little bit of information about yourself!</p>
-                <input id="phone" type="tel" min="10" placeholder="Phone number" required>
-                <input id="number" type="number" min="1" max="100" placeholder="Age" required>
-                <div class="radio">
-                    <input type="radio" name="gender" id="male">
+                <label id="number-label">*Phone Number:</label>
+                <input id="phone" placeholder="let's give you a call!" type="tel" min="10">
+                <label id="age-label">*Age:</label>
+                <input id="number" type="number" min="1" max="100" placeholder="Age">
+                <div class="align">
+                    <input type="radio" name="gender" id="male" value="male">
                     <label for="male">Male</label>
                 </div>
-                <div class="radio">
-                    <input type="radio" name="gender" id="female">
+                <div class="align">
+                    <input type="radio" name="gender" id="female" value="female">
                     <label for="female">Female</label>
                 </div>
-                <div class="radio">
-                    <input type="radio" name="gender" id="non-binary">
+                <div class="align">
+                    <input type="radio" name="gender" id="non-binary" value="non-binary">
                     <label for="non-binary">Non-Binary</label>
                 </div>
-                <button type="submit">Submit</button>
+                <div class="align space">
+                    <label id="game-select" for="dropdown">Favorite Core rules:</label><br>
+                    <select name="game-system" id="dropdown">
+                        <option>--Please Select a system--</option>
+                        <option value="13th-age">13th Age</option>
+                        <option value="Pathfinder">Pathfinder</option>
+                        <option value="Pathfinder-2e">Pathfinder 2e</option>
+                        <option value="Savage-Worlds">Savage Worlds</option>
+                        <option value="Dungeons-and-Dragon-5e">Dungeons and Dragon 5e</option>
+                        <option value="Dungeons-and-Dragon-4e">Dungeons and Dragon 4e</option>
+                        <option value="Dungeons-and-Dragon-3/3.5e">Dungeons and Dragon 3/3.5e</option>
+                        <option value="ADungeons-and-Dragon-">Advanced Dungeons and Dragon</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend class="header">Main type of character you play...</legend>
+                    <div>
+                        <input type="checkbox" value="Melee" id="Melee" name="Melee">
+                        <label for="Melee">Melee</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Melee/Caster" id="MeleeCaster" name="MeleeCaster">
+                        <label for="MeleeCaster">Melee/Caster</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Spell-Caster" id="Spell-Caster" name="Spell-Caster">
+                        <label for="Spell-Caster">Spell-Caster</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="GM" id="GM" name="GM">
+                        <label for="GM">GM (Everyone!)</label>
+                    </div>
+                </fieldset>
+                <p class="header">Additional comments on how we can improve!</p>
+                <textarea rows="5" placeholder="Let's hear what you have to say..."></textarea>
+                
+                <button type="submit" id="submit">Submit</button>
             </form>
         </div>
     </div>
