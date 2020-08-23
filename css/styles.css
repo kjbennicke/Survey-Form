@@ -14,6 +14,9 @@ html{
     font-family: 'Raleway', sans-serif;
     text-shadow: 1px 1px 2px black;
 }
+.header{
+    text-align: center;
+}
 h1{
     display: flex;
     justify-content: center;
@@ -22,13 +25,22 @@ h1{
     font-weight: 300;
 }
 button{
-    padding: 1em 6em;
+    padding: 0.5em 3.5em;
     color: var(--text-color);
     background-color: rgb(65, 199, 65);
     border: none;
+    text-align: center;
+    width: 40%;
     border-radius: 8px;
     letter-spacing: 4px;
     font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+form{
+    width: 80%;
 }
 button:hover{
     background-color: rgb(14, 160, 14);    
@@ -37,12 +49,26 @@ button:active{
     background-color: rgb(94, 172, 94);    
 
 }
-input{
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
     display: flex;
-    justify-content: center;
-    margin: 1em 1em;
+    margin: 1em 2em;
+    border: none;
+    border-radius: 16px;
+    padding: 0.5em 1em;
+    font-size: 14px; 
+    background-color: rgb(202, 198, 198);  
+    color: rgb(90, 88, 88);
+    width: 80%;
 }
+input:focus{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+.radio{
+    margin: 0.25em 2em;
 
+}
 #heading{
     display: flex;
     justify-content: center;
@@ -54,13 +80,38 @@ input{
 #mainForm{
     display: flex;
     margin: 0 Auto;
-    width: 500px;
+    width: 50%;
     height: 1000px;
     background-color: rgba(20, 35, 53, 0.95);
     z-index: 2;
     margin-bottom: 2em;
     border-radius: 8px;
-    box-shadow: 1px 1px 2px black;
     justify-content: center;
+    justify-items: center;
 }
 /* https://wallpaperaccess.com/full/827467.jpg */
+
+@media screen and (max-width: 700px) {
+  #mainForm{
+    display: flex;
+    margin: 0 Auto;
+    width: 80%;
+    height: 1000px;
+    background-color: rgba(20, 35, 53, 0.95);
+    z-index: 2;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    justify-content: center;
+    justify-items: center;
+  }
+    button{
+        padding: 0.5em 1em;
+        width: 50%;
+        text-anchor: inherit;
+    }
+    h1{
+        text-align: center;
+        margin: 1em;
+    }
+}
+
