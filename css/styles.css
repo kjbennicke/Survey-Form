@@ -67,6 +67,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     color: rgb(90, 88, 88);
     width: 80%;
 }
+textarea{
+    margin-bottom: 3em;
+}
 input:focus, textarea:focus{
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -99,7 +102,7 @@ fieldset{
     display: flex;
     margin: 0 Auto;
     width: 50%;
-    height: 1000px;
+    height: 900px;
     background-color: rgba(20, 35, 53, 0.95);
     z-index: 2;
     margin-bottom: 2em;
